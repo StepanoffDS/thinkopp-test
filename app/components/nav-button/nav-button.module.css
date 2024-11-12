@@ -1,0 +1,48 @@
+.button-next,
+.button-prev {
+	font-size: 16px;
+	margin-top: 0;
+	color: rgba(0, 0, 0, 1);
+	position: relative;
+}
+
+.button-next svg,
+.button-prev svg {
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+}
+
+.button-next svg {
+	right: 17px;
+}
+.button-prev svg {
+	left: 17px;
+	transform: translateY(-50%) rotate(180deg);
+}
+
+.button-prev,
+.button-next {
+	width: 248px;
+	height: 48px;
+}
+
+@media (max-width: 768px) {
+	.button-prev,
+	.button-next {
+		width: 248px;
+		height: 48px;
+		flex: 1;
+	}
+}
+
+@media (max-width: 500px) {
+	.button-next {
+		order: -1;
+	}
+
+	.button-prev,
+	.button-next {
+		width: 100%;
+	}
+}
